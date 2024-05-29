@@ -7,6 +7,7 @@ const todos = await file.json();
 
 app.use(logger())
 
+// Instead of req, res you get a context object
 app.get('/', (c) => {
   return c.text('Hello Hono!')
   // return c.html('<h1>Hello Hono!</h1>')
@@ -42,6 +43,7 @@ app.get('/', (c) => {
 })
 .patch('/todos/edit/title/:id', async (c) => {
   const id = Number(c.req.param('id'));
+  // Await ensures that the JSON parsing completes before you proceed with updating the todo item.
   const body = await c.req.json();
   const todo = todos.find((todo: any) => todo.id === id);
 
@@ -55,9 +57,10 @@ app.get('/', (c) => {
 })
 .patch('/todos/edit/title2', async (c) => {
   const body = await c.req.json();
+  // Finds the first occurrence of a todo with a matching title
   const todo = todos.find((todo: any) => 
     todo.title.toLowerCase().includes(body.search.toLowerCase())
-);
+  );
   todo.title = body.title;
   await Bun.write('todos.json', JSON.stringify(todos));
   return c.json(todo);

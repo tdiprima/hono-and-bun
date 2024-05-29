@@ -1,28 +1,14 @@
 # hono-bun-todos
 
-[Hono](https://hono.dev/)
+[Hono](https://hono.dev/) looks like express
 
 [Bun](https://bun.sh/)
 
-Install:
-
 ```sh
-curl -fsSL https://bun.sh/install | bash
+bun create hono <folder name>
 ```
 
-Switch to zsh shell:
-
-```sh
-exec /bin/zsh
-```
-
-To install dependencies:
-
-```sh
-bun install
-```
-
-To run:
+Run:
 
 ```sh
 bun run dev
@@ -30,4 +16,4 @@ bun run dev
 bun dev
 ```
 
-open http://localhost:3000
+Open http://localhost:3000
