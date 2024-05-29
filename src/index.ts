@@ -7,7 +7,7 @@ const todos = await file.json();
 
 app.use(logger())
 
-// Instead of req, res you get a context object
+// Instead of (req, res) you get a context object
 app.get('/', (c) => {
   return c.text('Hello Hono!')
   // return c.html('<h1>Hello Hono!</h1>')
