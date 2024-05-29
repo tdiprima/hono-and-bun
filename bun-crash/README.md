@@ -24,4 +24,10 @@ http://localhost:3000/hello (404)
 bunx cowsay "Hello Bun"
 ```
 
+### The Bundler
+
+```sh
+bun install axios
+```
+
 <br>
