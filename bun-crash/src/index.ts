@@ -1,8 +1,6 @@
 import fetchUser from "./githubAPI";
 
-async function main() {
-    const user = await fetchUser("tdiprima");
-    console.log(user);
-}
-
-main();
+(async () => {
+    const userData = await fetchUser("tdiprima");
+    document.querySelector("h1").innerHTML = JSON.stringify(userData);
+})();

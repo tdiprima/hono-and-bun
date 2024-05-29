@@ -28,6 +28,7 @@ bunx cowsay "Hello Bun"
 
 ```sh
 bun install axios
+bun build ./src/index.ts --outfile=./dist/bundle.js
 ```
 
 <br>
