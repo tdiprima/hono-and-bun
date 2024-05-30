@@ -32,6 +32,8 @@ bun install axios
 bun build ./src/index.ts --outfile=./dist/bundle.js
 ```
 
+Run dist/index.html
+
 ### React and JSX
 
 ```sh
@@ -40,5 +42,7 @@ bun install react react-dom
 # build + watch mode
 bun build ./src/index.tsx --outfile=./dist/bundle1.js --watch
 ```
+
+Run dist/index1.html
 
 <br>
