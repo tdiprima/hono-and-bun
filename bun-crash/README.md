@@ -28,7 +28,17 @@ bunx cowsay "Hello Bun"
 
 ```sh
 bun install axios
+
 bun build ./src/index.ts --outfile=./dist/bundle.js
+```
+
+### React and JSX
+
+```sh
+bun install react react-dom
+
+# build + watch mode
+bun build ./src/index.tsx --outfile=./dist/bundle1.js --watch
 ```
 
 <br>
