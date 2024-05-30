@@ -1,8 +1,8 @@
 # hono-bun-todos
 
-[Hono](https://hono.dev/) looks like express
+[Hono](https://hono.dev/): looks like express
 
-[Bun](https://bun.sh/)
+[Bun](https://bun.sh/): fast JavaScript runtime
 
 ```sh
 bun create hono <folder name>
